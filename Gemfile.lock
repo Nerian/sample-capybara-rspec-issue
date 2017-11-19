@@ -1,3 +1,50 @@
+GIT
+  remote: https://github.com/rspec/rspec-core.git
+  revision: 47565a9234330ec07fefd55f549cacf5b8bdbd44
+  branch: master
+  specs:
+    rspec-core (3.8.pre)
+      rspec-support (= 3.8.pre)
+
+GIT
+  remote: https://github.com/rspec/rspec-expectations.git
+  revision: 1461c96f5da75125e1f82b90de7fd0c0f7919cf4
+  branch: master
+  specs:
+    rspec-expectations (3.8.pre)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (= 3.8.pre)
+
+GIT
+  remote: https://github.com/rspec/rspec-mocks.git
+  revision: db22a885dda33fee30ff431a5bfd4fa89b72b779
+  branch: master
+  specs:
+    rspec-mocks (3.8.pre)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (= 3.8.pre)
+
+GIT
+  remote: https://github.com/rspec/rspec-rails.git
+  revision: 412c1a8dd9ff23ed0c41a6645d3cd3d10b7504db
+  branch: master
+  specs:
+    rspec-rails (3.8.pre)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (= 3.8.pre)
+      rspec-expectations (= 3.8.pre)
+      rspec-mocks (= 3.8.pre)
+      rspec-support (= 3.8.pre)
+
+GIT
+  remote: https://github.com/rspec/rspec-support.git
+  revision: c9d3a34c2ae9ce73bf8478ea2da7ae3f92464558
+  branch: master
+  specs:
+    rspec-support (3.8.pre)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -125,23 +172,6 @@ GEM
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
-    rspec-core (3.7.0)
-      rspec-support (~> 3.7.0)
-    rspec-expectations (3.7.0)
-      diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.7.0)
-    rspec-mocks (3.7.0)
-      diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.7.0)
-    rspec-rails (3.7.1)
-      actionpack (>= 3.0)
-      activesupport (>= 3.0)
-      railties (>= 3.0)
-      rspec-core (~> 3.7.0)
-      rspec-expectations (~> 3.7.0)
-      rspec-mocks (~> 3.7.0)
-      rspec-support (~> 3.7.0)
-    rspec-support (3.7.0)
     ruby_dep (1.5.0)
     rubyzip (1.2.1)
     sass (3.5.2)
@@ -203,7 +233,11 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   puma (~> 3.7)
   rails (~> 5.1.4)
-  rspec-rails
+  rspec-core!
+  rspec-expectations!
+  rspec-mocks!
+  rspec-rails!
+  rspec-support!
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
